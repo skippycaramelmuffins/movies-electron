@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penguin's Movie Café</title>
+    <link rel="stylesheet" href="display.css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #000;
+            color: #fff;
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .header {
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .movie-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 40px;
+        }
+
+        #moviePoster {
+            max-width: 400px;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .display-btn {
+            background-color: rgba(109, 176, 231, 0.35);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+
+        .display-btn:hover {
+            background-color: black;
+            color: #89CFF0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <br><br><br><br><br>
+        <h1><a href="index.html" style="color: white; text-decoration: none; margin-top: 320px;">Penguin's Movie Café</a></h1>
+        <p>Details of your favourite movies, all at the tip of your finger!</p>
+
+        <div class="movie-container">
+            <div id="moviePoster"></div>
+            <div id="movieDetails" class="movie-details"></div>
+            <a class="display-btn" href="search.html">Back</a>
+        </div>
+    </div>
+    
+    <script src="display.js"></script>
+</body>
+</html>

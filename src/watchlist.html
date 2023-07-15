@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css" />
+    <title>Penguin's Movie Café</title>
+</head>
+<body style="color:white; background-color: black;">
+    <div class="container mt-5">
+        <div class="text-center">
+            <h1><strong><a href="index.html" style="text-decoration:none; color: white;">Penguin's Movie Café</a></strong></h1>
+            <p><strong>User's Watchlist</strong></p>
+        </div>
+    </div>
+    <div class="main row justify-content-center">
+        <form action="" id="student-form" class="row justify-content-center mb-4" autocomplete="off">
+            <div class="col-10 col-md-8 mb-3">
+                <label for="firstName">Title: </label>
+                <input class="form-control" id="firstName" type="text" placeholder="Enter Movie Title">
+            </div>
+            <div class="col-10 col-md-8 mb-3">
+                <label for="lastName">Year: </label>
+                <input class="form-control" id="lastName" type="text" placeholder="Enter Year of Release">
+            </div>
+            <div class="col-10 col-md-8 mb-3">
+                <label for="rollNo">Status: </label>
+                <input class="form-control" id="rollNo" type="text" placeholder="Enter Status (Completed/Pending/Incomplete)">
+            </div> 
+            <div class="col-10 col-md-8">
+                <input class="btn btn-success add-btn" type="submit" value="Submit">
+            </div>
+        </form>
+        <div class="col-12 col-md-10 mt-5">
+            <table class="table table-striped table-dark">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Year</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="student-list">
+                    <tr>
+                        <td>Dear Dumb Diary</td>
+                        <td>2013</td>
+                        <td>Pending</td>
+                        <td>
+                            <a href="#" class="btn btn-warning btn-sm edit">Edit</a>
+                            <a href="#" class="btn btn-danger btn-sm delete">Delete</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>The Nutcracker and the Four Realms</td>
+                        <td>2020</td>
+                        <td>Completed</td>
+                        <td>
+                            <a href="#" class="btn btn-warning btn-sm edit">Edit</a>
+                            <a href="#" class="btn btn-danger btn-sm delete">Delete</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    <script src="watchlist.js"></script>
+</body>
+</html>

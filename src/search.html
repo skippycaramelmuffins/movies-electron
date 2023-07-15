@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penguin's Movie Café</title>
+    <link rel="stylesheet" href="search.css" />
+    <script src="search.js"></script>
+    <style>
+        table {
+          width: 100%;
+          border-collapse: collapse;
+        }
+        th, td {
+          padding: 8px;
+          text-align: left;
+          border-bottom: 1px solid #ddd;
+        }
+        th {
+          background-color: #f2f2f2;
+        }
+      </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header-content">
+            <h1><a href="index.html">Penguin's Movie Café</a></h1>
+            <p>Search the movies you want! All at the tip of your finger.</p>
+
+            <div class="searchbar">
+                 <input id="movieTitle" type="text" placeholder="Enter movie titles">
+                 <button onclick="movieSearch()">Search</button>
+            </div>
+            <table class="table">
+                <thead>
+                    <tr>
+                      <td>Poster</td>
+                      <td>Movie ID</td>
+                      <td>Title</td>
+                      <td>Year</td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                  </thead>
+                  <tbody id="tableBody"></tbody>
+            </table>
+        </div>
+    </div>
+    <script src="search.js">
+    </script>
+</body>
+</html>
